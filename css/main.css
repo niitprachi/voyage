@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: #f2f3f4;
+    text-transform: capitalize;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.inner-header,
+.inner-about-us,
+.inner-offers,
+.inner-holiday,
+.inner-clients,
+.inner-news {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.inner-header {
+    padding-bottom: 16px;
+    background: #2c3e50;
+    color: #ffff;
+}
+
+.top-nav {
+    display: inline-block;
+    width: 1170px;
+}
+
+.top-menu-list {
+    float: left;
+    padding-right: 270px;
+}
+
+.top-menu-list li {
+    display: inline-block;
+    list-style-type: none;
+    border-right: 1px solid #17202a;
+    padding: 0 17px;
+    box-sizing: border-box;
+}
+
+.top-menu-list li a {
+    color: #ffff;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.top-menu-list li img {
+    padding-right: 6px;
+    padding-top: 12px;
+}
+
+.top-menu-list span {
+    color: #72e3cd;
+}
+
+.top-menu-list li:first-child {
+    padding-left: 0;
+}
+
+.top-menu-list li:last-child {
+    padding-right: 0;
+}
+
+.top-menu-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.social-media-list {
+    float: right;
+}
+
+.social-media-list li {
+    display: inline-block;
+    padding: 0 15px;
+    border-left: 1px solid #17202a;
+}
+
+.social-media-list li img {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.social-media-list::after {
+    content: "";
+    display: bock;
+    clear: both;
+}
+
+.heading h1 {
+    display: inline-block;
+}
+
+.main-nav {
+    padding: 17px 0;
+    background-color: #ffff;
+}
+
+h1 {
+    float: left;
+    padding-top: 15px ;
+    padding-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.main-nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.main-nav h1 span {
+    color: #72e3cd; 
+}
+
+.main-menu-list {
+    float: right;
+}
+
+.main-menu-list li {
+    display: inline-block;
+    padding: 15px 17px 13px ;
+}
+
+.main-menu-list li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main-menu-list li a:hover {
+    color: #1dd2af;
+}
+
+.inner-about-us {
+    background: linear-gradient(rgba(35, 72, 87, 0.5), rgba(35, 72, 87, 0.5)), url("E:/work/project/prachi/html/project-4-Voyeg/images/background.png");
+    padding-top: 294px;
+    text-align: center;
+    color: #ffff;
+}
+
+.inner-about-us h2 {
+    text-transform: uppercase;
+    margin-bottom: 25px;    
+}
+
+.inner-about-us p {
+    margin-bottom: 50px;
+}
+
+.inner-about-us a {
+    padding: 21px 13px;
+    background: #1dd2af;
+    border-radius: 6px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.more-info {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
