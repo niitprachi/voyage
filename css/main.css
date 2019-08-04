@@ -4,90 +4,64 @@
 
 body {
     color: #f2f3f4;
-    text-transform: capitalize;
 }
 
 ul {
     padding-left: 0;
 }
 
-.inner-header,
-.inner-about-us,
-.inner-offers,
-.inner-holiday,
-.inner-clients,
-.inner-news {
+header {
+    color: #ffff;
+}
+
+.inner-wrapper {
     width: 1170px;
     margin: 0 auto;
 }
 
-.inner-header {
-    padding-bottom: 16px;
-    background: #2c3e50;
-    color: #ffff;
-}
-
 .top-nav {
-    display: inline-block;
-    width: 1170px;
+    background: #2c3e50;
 }
 
 .top-menu-list {
     float: left;
-    padding-right: 270px;
+}
+
+.inner-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .top-menu-list li {
     display: inline-block;
     list-style-type: none;
     border-right: 1px solid #17202a;
-    padding: 0 17px;
-    box-sizing: border-box;
+    padding: 12px 17px;
 }
 
 .top-menu-list li a {
     color: #ffff;
     text-decoration: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
 
-.top-menu-list li img {
-    padding-right: 6px;
-    padding-top: 12px;
-}
-
-.top-menu-list span {
-    color: #72e3cd;
+.register {
+    color: #72e3cd; 
+    margin-left: 5px;
 }
 
 .top-menu-list li:first-child {
     padding-left: 0;
 }
 
-.top-menu-list li:last-child {
-    padding-right: 0;
-}
-
-.top-menu-list::after {
-    content: "";
-    display: block;
-    clear: both;
+.icon-user,
+.icon-file-empty,
+.icon-phone {
+    padding-right: 8px;
 }
 
 .social-media-list {
     float: right;
-}
-
-.social-media-list li {
-    display: inline-block;
-    padding: 0 15px;
-    border-left: 1px solid #17202a;
-}
-
-.social-media-list li img {
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
 
 .social-media-list::after {
@@ -96,8 +70,14 @@ ul {
     clear: both;
 }
 
-.heading h1 {
+.social-media-list li {
     display: inline-block;
+    padding: 12px 15px;
+    border-left: 1px solid #17202a;
+}
+
+.social-media-list li:last-child {
+    border-right: 1px solid#17202a;
 }
 
 .main-nav {
@@ -112,19 +92,19 @@ h1 {
     text-transform: uppercase;
 }
 
-.main-nav::after {
+.inner-wrapper::after {
     content: "";
     display: block;
     clear: both;
 }
 
+.heading {
+    color: #48dabe;
+}
+
 h1 a {
     color: #2c3e50;
     text-decoration: none;
-}
-
-.main-nav h1 span {
-    color: #72e3cd; 
 }
 
 .main-menu-list {
@@ -140,44 +120,268 @@ h1 a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 15px;
+    color: #5d6e80;
 }
 
 .main-menu-list li a:hover {
     color: #1dd2af;
 }
 
-.inner-about-us {
-    background: linear-gradient(rgba(35, 72, 87, 0.5), rgba(35, 72, 87, 0.5)), url("E:/work/project/prachi/html/project-4-Voyeg/images/background.png");
-    padding-top: 294px;
+.about-us {
+    background: linear-gradient(rgba(35, 72, 87, 0.5), rgba(35, 72, 87, 0.5)), url("E:/work/project/prachi/html/voyage/images/background.png");
+    padding: 290px 0 210px;
     text-align: center;
     color: #ffff;
 }
 
-.inner-about-us h2 {
+.abtus h2 {
     text-transform: uppercase;
     margin-bottom: 25px;    
 }
 
-.inner-about-us p {
-    margin-bottom: 50px;
+.abtus p {
+     margin-bottom: 50px;
 }
 
-.inner-about-us a {
-    padding: 21px 13px;
+.icon-circle-left {
+    float: left;
+    font-size: 35px;
+    background: #4f606c;
+    border-radius: 15px;
+    color: #93a2a9;
+}
+
+/* .abtus::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.icon-circle-right {
+    float: right;
+    font-size: 35px;
     background: #1dd2af;
+    border-radius: 15px;
+    color: #f2f3f4;
+}
+
+.abtus a {
+    padding: 20px;
     border-radius: 6px;
     color: #ffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.more-info {
-    background: none;
+.mapbtn {
+    background: #1dd2af;
+    margin-right: 30px;
 }
 
+.infobtn {
+    background: none;
+    border: 2px solid#ffff;
+}
 
+.search-box {
+    padding: 30px 0;
+    background: #2c3e50;
+    color: #5d6e80;
+    text-transform: uppercase;
+}
 
+.search-box span {
+    color: #ffff;
+    text-transform: uppercase;
+}
 
+.holidays {
+    float: left;
+    margin-right: 75px;
+}
+
+.inner-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+label {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.search-label {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Conv_ELEPHNTI';
+    font-size: 16px;
+    
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 0.875em;
+    font-family: 'Conv_ELEPHNTI';
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 0.875em;
+    font-family: 'Conv_ELEPHNTI';
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 0.875em;
+    font-family: 'Conv_ELEPHNTI';
+  }
+
+input[type="button"] {
+    border: 0;
+}
+
+input[type="text"],
+select[type="text"] {
+    padding: 12px 2px;
+    width: 300px;
+    position: relative;
+}
+
+.icon-calender {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+}
+
+.searchbtn {
+    background: #1dd2af;
+    color: #ffff;
+    padding: 12px 25px;
+}
+
+.special-offers {
+    padding: 80px 0 125px;
+    background: #ffff;
+    color: #6c6c6c;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.special-offers h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.offers-list {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.offers-list li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.offers-list li:first-child {
+    padding-left: 0;
+}
+
+.offers-list li:last-child {
+    padding-right: 0;
+}
+
+.offers-list {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.offers-list li h4 {
+    color: #858585;
+    text-decoration: none;
+}
+
+.offers-list li a {
+    display: block;
+    text-decoration: none;
+    border: 2px solid #e0dede;
+    background:  #e0dede;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.offers-list li a:hover {
+    background: #2c3e50;
+    border: 2px solid #1dd2af;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.offers-list li a:hover h4 {
+    color: #ffff;
+}
+
+.special-offers p {
+    margin-bottom: 60px;
+}
+
+.holiday-type {
+    padding: 75px 0 120px;
+    background: linear-gradient(rgba(60, 78, 96, 0.5), rgba(60, 78, 96, 0.5)), url("E:/work/project/prachi/html/voyage/images/holiday-bg.png");
+    color: black;
+    text-align: center;
+}
+
+ .holiday-type h2 {
+     color: #ffff;
+     margin-bottom: 18px;
+     text-transform: uppercase;
+}
+
+.holiday-type p {
+    margin-bottom: 65px;
+}
+
+.holiday-list {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.holiday-list li {
+    float: left;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.holiday-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-icon-Converted,
+.icon-office {
+    font-size: 72px;
+    color: #ffff;
+    padding: 29px 42px;
+    border: 5px solid #ffff;
+    border-radius: 100%;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.holiday-list a {
+    display: block;
+    width: 158px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 
 
 

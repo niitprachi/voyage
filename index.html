@@ -6,27 +6,30 @@
             <meta name="author" content="Prachi">
             <meta name="discription" content="Travel website">
             <link rel="stylesheet" type="text/css" href="css/main.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
         </head>
         <body>
             <header>
-                <div class="inner-header">
-                    <nav class="top-nav">
-                    <ul class="top-menu-list">
-                        <li><a href="#"><img src="images/login-1.png" width="16" height="16" alt="login"/>agent login</a></li>
-                        <li><a href="#"><img src="images/login-1.png" width="16" height="16" alt="login"/>customer login</a></li>
-                        <li>not a member?<a href="#"><span>Register</span></a></li>
-                        <li><a href="#">call us now:815-123-4567</a></li>
-                    </ul>
-                    <ul class="social-media-list">
-                        <li><a href="https://www.facebook.com/"><img src="images/f-1.png" alt="facebook" width="11" height="15"/></a></li>
-                        <li><a href="https://twitter.com/"><img src="images/twitter-1.png" alt="twitter" width="15" height="15"/></a></li>
-                        <li><a href="https://www.tumblr.com/login"><img src="images/t-1.png" alt="thumblr" width="10" height="15"/></a></li>
-                        <li><a href="https://in.pinterest.com/"><img src="images/p-1.png" alt="pinterest" width="15" height="15"/></a></li>
-                    </ul>
-                    </nav>
+                <nav class="top-nav">
+                    <div class="inner-wrapper">
+                        <ul class="top-menu-list">
+                            <li><a href="#"><span class="icon-user"></span>agent login</a></li>
+                            <li><a href="#"><span class="icon-user"></span>customer login</a></li>
+                            <li><span class="icon-file-empty"></span>not a member?<a href="#"><span class="register">Register</span></a></li>
+                            <li><span class="icon-phone"></span><a href="#">:815-123-4567</a></li>
+                        </ul>
+                        <ul class="social-media-list">
+                            <li><a href="https://www.facebook.com/"><img src="images/f-1.png" alt="facebook" width="11" height="15"/></a></li>
+                            <li><a href="https://twitter.com/"><img src="images/twitter-1.png" alt="twitter" width="15" height="15"/></a></li>
+                            <li><a href="https://www.tumblr.com/login"><img src="images/t-1.png" alt="thumblr" width="10" height="15"/></a></li>
+                            <li><a href="https://in.pinterest.com/"><img src="images/p-1.png" alt="pinterest" width="15" height="15"/></a></li>
+                        </ul>
+                    </div>
+                </nav>
                         
-                    <nav class="main-nav">
-                        <h1><a href="#">V<span>o</span>yage</a></h1>
+                <nav class="main-nav">
+                    <div class="inner-wrapper">
+                        <h1><a href="#">V<span class="heading">o</span>yage</a></h1>
                         
                         <ul class="main-menu-list">
                             <li><a href="#">home</a></li>
@@ -34,64 +37,75 @@
                             <li><a href="#">criuses</a></li>
                             <li><a href="#">specials</a></li>
                             <li><a href="#">holidays</a></li>
-                            <li><a href="#">blog</a></li>   
+                            <li><a href="#">blog</a></li> 
+                            <li><a href="#"><span class="icon-search"></span></a></li>  
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </header>
 
             <section class="about-us">
-                <div class="inner-about-us">
+                <div class="inner-wrapper abtus">
                     <h2>to travel is to live</h2>
                     <p>You Don't Need Magic to Disappear. All you need is a destination.</p>
-                    <a href="#">show on the map</a>
-                    <a href="#" class="more-info">more info</a>
+                    <span class="icon-circle-left"></span>
+                    <span class="icon-circle-right"></span>
+                    
+                    <a href="#" class="mapbtn">show on the map</a>
+                    <a href="#" class="infobtn">more info</a>
+                </div>
+            </section>
 
-                    <div class="search-box">
-                        <h4>find your</h4><span>holiday</span>
+            <section class="search-box">
+                <div class="inner-wrapper">
 
-                        <form action="action_page.php" class="selection"
-                            <label for="where">where</label> 
-                            <select id="my-list">
-                                <option value="1">london</option>
-                                <option value="2">united state</option>
-                                <option value="3">europe</option>
-                                <option value="4">switzerland</option>
-                                <option value="5">maldives</option>
-                                <option value="6">singapor</option>
-                                <option value="7">spain</option>
-                                <option value="8">mauritius</option>
-                            </select>
-                            <label for="when">when</label>
-                            <input type="datetime-local"  class="datetime">
+                    <div class="holidays"><p>find your</p><span>holidays</span></div>
 
-                            <label>search</label>
-                            <input type="button" cclass="searchbtn">
-                        </form>
-                    </div>
+                    <form action="action_page.php" class="selection">
+                        <label for="where">where</label>
+                        <select id="my-list" type="text">
+                            <option value="">Destination</option>
+                            <option value="1">united state</option>
+                            <option value="2">europe</option>
+                            <option value="3">switzerland</option>
+                            <option value="4">maldives</option>
+                            <option value="5">singapor</option>
+                            <option value="6">spain</option>
+                            <option value="7">mauritius</option>
+                            <option value="8">london</option>
+                        </select>
+                        <i class="icon-earth"></i>
+
+                        <label for="when">when </label>
+                        <input placeholder="Select Date" type="text" onfocus="(this.type='date')" class="date" id="date"/>
+                        <i class="icon-calendar"></i>
+
+                        <label></label>
+                        <input type="button" class="searchbtn" value="Search">
+                    </form>
                 </div>
             </section>
 
             <section class="special-offers">
-                <div class="inner-offers">
+                <div class="inner-wrapper">
                     <h2>special offers</h2>
                     <p>best 2014 packages where people love to stay!</p>
 
                     <ul class="offers-list">
                     <li>
-                        <a href="#"><img src="images/statue.png" width="300" height="204" alt="statue of liberty"/>
+                        <a href="#"><img src="images/statue-2.png" width="268" height="204" alt="statue of liberty"/>
                         <h4>statue of liberty-usa</h4></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/hong-kong.png" width="300" height="204" alt="hong-kong"/>
+                        <a href="#"><img src="images/hong-kong.png" width="268" height="204" alt="hong-kong"/>
                         <h4>hong kong & macau</h4></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/vietnam.png" width="300" height="204" alt="vietnam"/>
+                        <a href="#"><img src="images/vietnam.png" width="268" height="204" alt="vietnam"/>
                         <h4>veitem</h4></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/dubai.png" width="300" height="204" alt="dubai"/>
+                        <a href="#"><img src="images/dubai.png" width="268" height="204" alt="dubai"/>
                         <h4>dubai</h4></a>
                     </li>
                     </ul>
@@ -99,31 +113,32 @@
             </section>
 
             <section class="holiday-type">
-                <div class="inner-holiday">
-                    <h2>hoidays type</h2>
+                <div class="inner-wrapper">
+                    <h2>holidays type</h2>
                     <p>get explore your dream to travel the world</p>
 
                     <ul class="holiday-list">
                         <li>
-                            <a href="#"></a><img src="images/cruise.png" width="72" height="74" alt="cruise"/>
+                            <a href="#"><span class="icon-icon-Converted"></span>
                             <h4>cruise</h4></a>
                         </li>
                         <li>
-                            <a href="#"></a><img src="images/city-breaks.png" width="72" height="74" alt="city-breaks"/>
+                            <a href="#"><span class="icon-icon-Converted"></span>                            
                             <h4>city breaks</h4></a>
                         </li>
                         <li>
-                            <a href="#"></a><img src="images/honeymoon.png" width="72" height="74" alt="honeymoon"/>
+                            <a href="#"><span class="icon-icon-Converted"></span>
                             <h4>honeymoon</h4></a>
                         </li>
-                        <li><a href="#"></a><img src="images/adventure.png" width="72" height="74" alt="adventure"/>
+                        <li>
+                            <a href="#"><span class="icon-icon-Converted"></span>
                             <h4>adventure</h4></a>
                         </li>
-                        <li><a href="#"></a><img src="images/safari.png" width="72" height="74" alt="safari"/>
+                        <li><a href="#"><span class="icon-icon-Converted"></span>
                             <h4>safari</h4></a>
                         </li>
                         <li>
-                            <a href="#"></a><img src="images/beach.png" width="72" height="74" alt="beach"/>
+                            <a href="#"><span class="icon-icon-Converted"></span>
                             <h4>beach</h4></a>
                         </li>
                     </ul>
@@ -131,7 +146,7 @@
             </section>
 
             <section class="happy-clients">
-                <div class="inner-clients">
+                <div class="inner-wrapper">
                     <ul class="clients-list">
                         <li>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia commodi doloribus cupiditate.</p>
@@ -153,7 +168,7 @@
             </section>
         </body>
         <footer class="latest-news">
-            <div class="inner-news">
+            <div class="inner-wrapper">
                 <ul class="news-list">
                     <li>
                         <h3>newsetter</h3>
@@ -206,6 +221,7 @@
                         <li><a href="#">blog</a></li>
                         <li><a href="#">contact-us</a></li>
                     </ul>
+                        <span class="icon-circle-down"></span>
                 </div>
             </div>
         </footer>
