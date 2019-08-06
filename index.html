@@ -15,7 +15,7 @@
                         <ul class="top-menu-list">
                             <li><a href="#"><span class="icon-user"></span>agent login</a></li>
                             <li><a href="#"><span class="icon-user"></span>customer login</a></li>
-                            <li><span class="icon-file-empty"></span>not a member?<a href="#"><span class="register">Register</span></a></li>
+                            <li><span class="icon-file-empty"></span>Not a Member?<a href="#"><span class="register">Register</span></a></li>
                             <li><span class="icon-phone"></span><a href="#">:815-123-4567</a></li>
                         </ul>
                         <ul class="social-media-list">
@@ -63,7 +63,7 @@
 
                     <form action="action_page.php" class="selection">
                         <label for="where">where</label>
-                        <select id="my-list" type="text">
+                        <select id="my-list" type="text" class="select">
                             <option value="">Destination</option>
                             <option value="1">united state</option>
                             <option value="2">europe</option>
@@ -80,7 +80,6 @@
                         <input placeholder="Select Date" type="text" onfocus="(this.type='date')" class="date" id="date"/>
                         <i class="icon-calendar"></i>
 
-                        <label></label>
                         <input type="button" class="searchbtn" value="Search">
                     </form>
                 </div>
@@ -88,7 +87,7 @@
 
             <section class="special-offers">
                 <div class="inner-wrapper">
-                    <h2>special offers</h2>
+                    <h3>special offers</h3>
                     <p>best 2014 packages where people love to stay!</p>
 
                     <ul class="offers-list">
@@ -114,7 +113,7 @@
 
             <section class="holiday-type">
                 <div class="inner-wrapper">
-                    <h2>holidays type</h2>
+                    <h3>holidays type</h3>
                     <p>get explore your dream to travel the world</p>
 
                     <ul class="holiday-list">
@@ -147,21 +146,28 @@
 
             <section class="happy-clients">
                 <div class="inner-wrapper">
+                    <h3>happy clients</h3>
+                    <p>What customer say about us and why they love our services.</p>
                     <ul class="clients-list">
                         <li>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia commodi doloribus cupiditate.</p>
-                            <h3>prachi malusare</h3>
-                            <h4>united state</h4>
+                            <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia commodi doloribus cupiditate.</p>
+                            <h4>prachi malusare</h4>
+                            <h5>united state</h5>
+                        </a>
                         </li>
                         <li>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis repellendus ullam nihil assumenda animi ipsa.</p>
-                            <h3>pravin waychal</h3>
-                            <h4>london</h4>
+                            <a href="#">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis repellendus ullam nihil assumenda.</p>
+                            <h4>pravin waychal</h4>
+                            <h5>london</h5>
+                            </a>
                         </li>
                         <li>
+                            <a href="#">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, cumque odit? Quam praesentium vel.</p>
-                            <h3>karna waychal</h3>
-                            <h4>london</h4>
+                            <h4>karna waychal</h4>
+                            <h5>london</h5>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -170,21 +176,26 @@
         <footer class="latest-news">
             <div class="inner-wrapper">
                 <ul class="news-list">
-                    <li>
-                        <h3>newsetter</h3>
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore. </p>
-                    </li>
-                    <li>
-                        <h3>latest news</h3>
-                        <a href="#"><img src="images/img-1.png" width="25" height="25" alt="images"/></a>
-                        <p>postformat gallery: multiple images</p>
-                        <h4>october 12, 1991-05.30 am.</h4>
+                    <li class="newsletter">
+                            <h3>newsetter</h3>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
 
-                        <a href="#"><img src="images/img-2.png" width="25" height="25" alt="images"/></a>
-                        <p>snowboarding is fun!</p>
-                        <h4>december 01, 1987 11.30 pm.</h4>
+                            <form action="action_page.php" class="news-selection">
+                                <input type="text" class="subscribe" placeholder="Subscribe..." id="Subscribe" value="Subscribe..."/>
+                                <input type="button" class="gobtn" value="Go"/>
+                            </form>
                     </li>
-                    <li>
+                    <li class="news">
+                            <h3>latest news</h3>
+                            <img src="images/img-1.png" width="25" height="25" alt="images"/>
+                            <p>postformat gallery: multiple images</p>
+                            <h5>october 12, 1991-05.30 am.</h5>
+
+                            <img src="images/img-2.png" width="25" height="25" alt="images"/></a>
+                            <p>snowboarding is fun!</p>
+                            <h5>december 01, 1987 11.30 pm.</h5>
+                    </li>
+                    <li class="tags">
                         <h3>tags</h3>
                         <a href="#">agent login</a>
                         <a href="#">customer login</a>
@@ -197,31 +208,33 @@
                         <a href="#">some</a>
                         <a href="#">portrait</a>
                     </li>
-                    <li>
-                        <address>address</address>
+                    <li class="address">
+                        <h3>address</h3>
                         <p>DieSachbearbeiter Schönhauser Allee 167c,10435 Berlin Germany</p>
-                        <p><span>email:</span>malu.prachi@gmaill.com</p>
-                    </li>
-                </ul>
+                        <h4><span>email:</span>malu.prachi@gmaill.com</h4>
 
-                <ul class="socia-media list">
-                    <li><a href="https://www.facebook.com/"><img src="images/f-1.png" alt="facebook" width="11" height="15"/></a></li>
-                    <li><a href="https://twitter.com/"><img src="images/twitter-1.png" alt="twitter" width="15" height="15"/></a></li>
-                    <li><a href="https://www.tumblr.com/login"><img src="images/t-1.png" alt="thumblr" width="10" height="15"/></a></li>
-                    <li><a href="https://in.pinterest.com/"><img src="images/p-1.png" alt="pinterest" width="15" height="15"/></a></li>
+                        <ul class="social-media-list">
+                            <li><a href="https://www.facebook.com/"><img src="images/f-1.png" alt="facebook" width="15" height="25"/></a></li>
+                            <li><a href="https://twitter.com/"><img src="images/twitter-1.png" alt="twitter" width="25" height="25"/></a></li>
+                            <li><a href="https://www.tumblr.com/login"><img src="images/t-1.png" alt="thumblr" width="15" height="25"/></a></li>
+                            <li><a href="https://in.pinterest.com/"><img src="images/p-1.png" alt="pinterest" width="20" height="25"/></a></li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <div class="footer-end">
                     <ul class="footer-end-list">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">destination</a></li>
-                        <li><a href="#">criuses</a></li>
-                        <li><a href="#">specials</a></li>
-                        <li><a href="#">holidays</a></li>
-                        <li><a href="#">blog</a></li>
+                        <li><a href="#">home</a> &#58;&#58; </li>
+                        <li><a href="#">destination</a> &#58;&#58; </li>
+                        <li><a href="#">criuses</a> &#58;&#58; </li>
+                        <li><a href="#">specials</a> &#58;&#58; </li>
+                        <li><a href="#">holidays</a> &#58;&#58; </li>
+                        <li><a href="#">blog</a> &#58;&#58; </li>
                         <li><a href="#">contact-us</a></li>
                     </ul>
-                        <span class="icon-circle-down"></span>
+                        <p>Copyright &#64;voyage.All rights Reserved.</p>
+                        
+                        <span class="icon-circle-up go-to-top"></span>
                 </div>
             </div>
         </footer>
